@@ -6,6 +6,8 @@
 
 Este projeto é um aplicativo web desenvolvido com Flask que prevê a probabilidade de sobrevivência de passageiros a partir de dados do Titanic. A aplicação utiliza técnicas de machine learning para treinar um modelo de Random Forest e fornece uma interface web para que os usuários insiram os dados dos passageiros e obtenham as previsões.
 
+Deploy: <a>https://matmjr.pythonanywhere.com/</a>
+
 ## Estrutura do Projeto
 
 O projeto está organizado em três camadas principais, dentro da pasta `src`:
