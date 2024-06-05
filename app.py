@@ -1,7 +1,8 @@
 from src.data_layer import DataLayer
 from src.business_layer import BusinessLayer
 from src.presentation_layer import PresentationLayer
-import pandas as pd
+from socket import gethostname
+
 
 file_id = '1S5Nl793vcL5ZPTGjzKaIEbwbLaDplvIP'
 
@@ -30,5 +31,6 @@ label_encoders = {
 presentation_layer = PresentationLayer(business_layer, label_encoders, df_encoded)
 app = presentation_layer.create_app()
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    if 'liveconsole' not in gethostname():
+        app.run()

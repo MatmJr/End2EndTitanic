@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Previsão de Sobrevivência</title>
+    <title>Previsão de Sobrevivência - Titanic Dataset</title>
 </head>
 <body>
     <h1>Previsão de Sobrevivência</h1>
+    <p>
+        Insira os dados do passageiro para prever a probabilidade de sobrevivência com base no conjunto de dados do Titanic.
+        O código fonte está disponível no <a href="https://github.com/MatmJr/End2EndTitanic">GitHub</a>.
+    </p>
     <form action="/predict" method="post">
         <label for="Pclass">Classe do Passageiro:</label>
         <select name="Pclass" id="Pclass">
@@ -16,8 +20,8 @@
         </select><br>
         <label for="Sex">Sexo:</label>
         <select name="Sex" id="Sex">
-            <option value="male">male</option>
-            <option value="female">female</option>
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
         </select><br>
         <label for="Age">Idade:</label>
         <input type="number" name="Age" id="Age" value="25"><br>
