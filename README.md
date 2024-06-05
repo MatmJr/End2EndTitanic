@@ -80,11 +80,19 @@ project/
    ```
 
 2. Crie um ambiente virtual e instale as dependências:
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
-   pip install -r requirements.txt
+
+   Linux/Mac:
+
+   ```Linux/Mac
+   python3 -m venv venv & source venv/bin/activate & pip install -r requirements.txt
    ```
+
+   Windows:
+   
+   ```Windows
+   python -m venv venv & .\venv\Scripts\activate & pip install -r requirements.txt
+   ```
+
 
 ### Execução
 
